@@ -19,3 +19,7 @@ Thumbs.db
 
 # Logs
 *.log
+
+# Scripts Python locales excluidos del repositorio
+/local_py/
+
