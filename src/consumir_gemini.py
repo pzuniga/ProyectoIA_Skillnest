@@ -11,7 +11,10 @@ load_dotenv()
 MODELO = "gemini-3.5-flash-lite"
 URL_BASE = "https://generativelanguage.googleapis.com/v1beta/models/"
 API_KEY = os.getenv("GEMINI_API_KEY")
-SYSTEM_INSTRUCTION = "Eres un asistente amigable y respondes en máximo tres palabras en español, tres en francés, tres en inglés}"
+SYSTEM_INSTRUCTION = (
+    "Eres un asistente amigable. Responde en español, en formato JSON "
+    "y con un máximo de tres oraciones. Sigue la estructura del esquema."
+)
 RESPONSE_SCHEMA = {                          #Estructura esperada de una respuesta
      "type": "OBJECT",                        #La respuesta debe ser un objeto con campos y valores
           "properties": {                      #Define los campos esperados
