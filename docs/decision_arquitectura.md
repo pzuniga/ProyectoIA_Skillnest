@@ -19,7 +19,8 @@ Los requisitos que necesito cumplir son:
 
 Flujo general: recibir pregunta → construir petición → consultar Gemini → extraer respuesta y calcular costo → presentar resultados.
 
-![Diagrama de arquitectura](docs/diagrama_arquitectura.png)
+![Diagrama de arquitectura](./diagrama_arquitectura.png)
+
 
 ## Comparación de candidatos
 
@@ -76,4 +77,4 @@ Descarté provisionalmente `gemini-3.1-flash-lite` por su mayor latencia observa
 Descarté `gemini-3.6-flash` por su mayor latencia y costo. Su respuesta más detallada no demuestra una mejora suficiente para esta aplicación y también incluye afirmaciones que requieren revisión, especialmente sobre créditos ambientales y exigencias del alcance de evaluación.
 
 ## Resultados de la comparación
-![Salida del código](docs/decision_arquitectura_salida.txt)
+![Salida del código](./decision_arquitectura_salida.txt)

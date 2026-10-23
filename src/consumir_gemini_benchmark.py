@@ -98,6 +98,7 @@ def evaluar_rendimiento(pregunta, modelo, precio_entrada, precio_salida, repetic
 
 
 # Ejecución secuencial de los tres modelos
+# Sólo ejecutar si el archivo en el que estoy se encuentra directamente ejecutado
 if __name__ == "__main__":
     pregunta = (
         "¿Qué etapas del ciclo de vida se evalúan al medir "

@@ -1,0 +1,22 @@
+{
+  "definir_estudio": {
+    "exitos": 3,
+    "intentos": 3
+  },
+  "recopilar_datos": {
+    "exitos": 3,
+    "intentos": 3
+  },
+  "revisar_datos": {
+    "exitos": 3,
+    "intentos": 3
+  },
+  "calcular_huella": {
+    "exitos": 3,
+    "intentos": 3
+  },
+  "preparar_informe": {
+    "exitos": 3,
+    "intentos": 3
+  }
+}
