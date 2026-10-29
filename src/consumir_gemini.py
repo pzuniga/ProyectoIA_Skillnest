@@ -50,6 +50,19 @@ def enviar_peticion(url, body):
          raise RuntimeError("No se pudo conectar con el servicio. Intenta de nuevo en unos momentos")
      except requests.exceptions.Timeout:
          raise RuntimeError("Se agotó el tiempo. Intenta de nuevo en unos momentos")
+     #Manejo de errores de estado (Errores HTTP)
+     #401 y 403: Problemas de autentificación y permisos 
+     if respuesta.status_code in (401, 403):      
+         raise ValueError("Credencial inválida o sin permiso. Revisa tu GEMINI_API_KEY")
+     #5xx: Errores del servidor/proveedor
+     if respuesta.status_code >= 500:
+         raise TimeoutError("El proveedor no pudo procesar la petición. Hay que espera y reintentar")
+     #Cuota o límite de peticiones excedido
+     if respuesta.status_code == 429:
+         segundos = respuesta.headers.get("Retry-After")
+         mensaje = f"Límite excedido. Reintentar en {segundos}s" if segundos else "Límite excedido. Vuelve a intentarlo más tarde"
+         raise TimeoutError(mensaje)
+     #Cualquier otro error que no hayamos mapeado (ej: 400 Bad Request, 404 Not Found)
      if respuesta.status_code !=200:
          raise RuntimeError(f"Error en la petición. status Code: {respuesta.status_code}")
      try:
@@ -77,7 +90,8 @@ def obtener_dato_de_prueba(pregunta):
      datos_formateados = parsear_respuesta_json(texto, ["categoria", "nivel"] ) 
      return datos_formateados
 
-#def calcular el cosoto del envío y respuesta 
+#def calcular el costo del envío y respuesta 
+#defo calcular_costo(datos:dict, precio_entrada: float, precio_salida: float) -> float
 def calcular_costo(datos, precio_entrada, precio_salida):
      uso = datos["usageMetadata"]
      tokens_entrada = uso.get("promptTokenCount",0)
@@ -105,5 +119,5 @@ def parsear_respuesta_json (texto, claves_requeridas=None):
 if __name__ == "__main__":
     try:
         print(obtener_dato_de_prueba("Confirma en una frase corta que esta conexión funciona"))
-    except (ValueError, RuntimeError) as error:
+    except (ValueError, RuntimeError, TimeoutError) as error:
         print ("No se pudo completar la operación: ", error)
