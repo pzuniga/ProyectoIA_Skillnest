@@ -5,12 +5,19 @@ from unittest.mock import patch, Mock
 # pytest ejecuta las pruebas y permite comprobar excepciones.
 import pytest
 
+# Importamos el módulo para acceder a sus funciones y variables:
+# cliente.con_reintento(), cliente.registrar_costo(), etc.
+from src import cliente
+
 # Importamos directamente la función que envía peticiones.
 from src.consumir_gemini import enviar_peticion
 
-# Importamos el módulo para acceder a sus funciones y variables:
-# cliente.con_reintento(), cliente.registrar_costo(), etc.
-import cliente
+
+@pytest.fixture(autouse=True)
+def reiniciar_costo_total():
+    cliente.costo_total_sesion = 0
+    yield
+
 
 
 # PRUEBAS DE ENVÍO DE PETICIONES
@@ -81,7 +88,7 @@ def test_con_reintento_agota_intentos():
         raise TimeoutError("simulado")
 
     # Reemplazamos time.sleep para que la prueba no espere realmente.
-    with patch("cliente.time.sleep"):
+    with patch("src.cliente.time.sleep"):
         # Comprobamos que el TimeoutError salga de con_reintento
         # cuando todos los intentos fallan.
         with pytest.raises(TimeoutError):
@@ -96,7 +103,7 @@ def test_con_reintento_no_reintenta_value_error():
     operacion = Mock(side_effect=ValueError("simulado"))
 
     # "dormir" permite inspeccionar si se llamó a la pausa simulada.
-    with patch("cliente.time.sleep") as dormir:
+    with patch("src.cliente.time.sleep") as dormir:
         # ValueError debe propagarse directamente porque con_reintento
         # solo captura TimeoutError.
         with pytest.raises(ValueError):
@@ -122,7 +129,7 @@ def test_registrar_costo_acumula():
     # Establecemos temporalmente el acumulador en cero.
     # Al salir del bloque, patch restaura el valor anterior.
     # Así la prueba no depende de otras pruebas ni deja cambiado el acumulador.
-    with patch("cliente.costo_total_sesion", 0.0):
+    with patch("src.cliente.costo_total_sesion", 0.0):
         costo = cliente.registrar_costo(respuesta_falsa)
 
         # Con 1.000 tokens, el costo debe ser igual a la tarifa por 1.000.
@@ -141,7 +148,7 @@ def test_consultar_modelo_convierte_error():
     # Reemplazamos con_reintento para que lance el error inmediatamente.
     # No se ejecuta su lógica ni se envía una petición HTTP.
     with patch(
-        "cliente.con_reintento",
+        "src.cliente.con_reintento",
         side_effect=error_simulado,
     ):
         # Comprobamos que consultar_modelo capture TimeoutError

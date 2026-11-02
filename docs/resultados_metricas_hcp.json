@@ -1,0 +1,182 @@
+[
+  {
+    "id": "HCP01",
+    "consulta": "¿Qué representa la huella de carbono de un producto?",
+    "referencia": "Representa las emisiones y remociones de gases de efecto invernadero del sistema de producto estudiado, expresadas en dióxido de carbono equivalente.",
+    "instruccion": "Actúa como un asistente que orienta a una persona de empresa que está aprendiendo a recopilar información para cuantificar la huella de carbono de un producto. Responde en español, directamente y en un máximo de 60 palabras. No inventes datos, factores de emisión ni fuentes. Cuando falte información, indica qué se necesita.",
+    "respuesta": "La huella de carbono de un producto mide el total de emisiones de gases de efecto invernadero generadas durante todo su ciclo de vida, desde la extracción de materias primas y fabricación, hasta su distribución, uso y gestión final como residuo. \n\nPara cuantificarla, dime qué producto analizas y qué etapas del proceso abarca tu inventario de datos actuales.",
+    "precision": 0.20689655172413793,
+    "cobertura": 0.5714285714285714,
+    "f1": 0.3037974683544304
+  },
+  {
+    "id": "HCP02",
+    "consulta": "¿Para qué debo definir el objetivo de un estudio de HCP?",
+    "referencia": "Para establecer el propósito del estudio, su uso previsto y los destinatarios de los resultados.",
+    "instruccion": "Actúa como un asistente que orienta a una persona de empresa que está aprendiendo a recopilar información para cuantificar la huella de carbono de un producto. Responde en español, directamente y en un máximo de 60 palabras. No inventes datos, factores de emisión ni fuentes. Cuando falte información, indica qué se necesita.",
+    "respuesta": "Definir el objetivo es crucial porque determina el alcance del estudio, los límites del sistema (cuna a puerta, cuna a tumba) y la metodología a usar. Sin un objetivo claro, no sabrás qué datos recopilar ni a quién comunicarle los resultados. \n\n¿Cuál es el propósito principal de calcular la huella de este producto y quién será el público objetivo?",
+    "precision": 0.15254237288135594,
+    "cobertura": 0.6,
+    "f1": 0.24324324324324323
+  },
+  {
+    "id": "HCP03",
+    "consulta": "¿Qué debo describir del producto antes de recopilar datos?",
+    "referencia": "Debes describir el producto, su función, sus características relevantes y los procesos necesarios para proporcionarlo.",
+    "instruccion": "Actúa como un asistente que orienta a una persona de empresa que está aprendiendo a recopilar información para cuantificar la huella de carbono de un producto. Responde en español, directamente y en un máximo de 60 palabras. No inventes datos, factores de emisión ni fuentes. Cuando falte información, indica qué se necesita.",
+    "respuesta": "Para empezar, debes definir claramente la **unidad funcional** (ej. 1 kg de producto envasado) y trazar el **diagrama de flujo** del ciclo de vida, abarcando desde la extracción de materias primas hasta su disposición final. \n\nSi falta algún proceso intermedio o el uso previsto por el cliente, indícalo para detallar los límites del sistema.",
+    "precision": 0.12962962962962962,
+    "cobertura": 0.4666666666666667,
+    "f1": 0.20289855072463767
+  },
+  {
+    "id": "HCP04",
+    "consulta": "¿Qué expresa la unidad funcional?",
+    "referencia": "Expresa de forma cuantificada la función del sistema de producto y sirve como referencia para relacionar entradas, salidas y resultados del estudio.",
+    "instruccion": "Actúa como un asistente que orienta a una persona de empresa que está aprendiendo a recopilar información para cuantificar la huella de carbono de un producto. Responde en español, directamente y en un máximo de 60 palabras. No inventes datos, factores de emisión ni fuentes. Cuando falte información, indica qué se necesita.",
+    "respuesta": "La unidad funcional expresa la base de cálculo de tu estudio; define la magnitud y duración de la función del producto (por ejemplo, \"producir y envasar 1.000 litros de leche\"). \n\nPara ayudarte, indícame: ¿qué producto estás analizando y cuál es su uso principal? Con eso definiremos su cantidad exacta.",
+    "precision": 0.22448979591836735,
+    "cobertura": 0.5,
+    "f1": 0.30985915492957744
+  },
+  {
+    "id": "HCP05",
+    "consulta": "¿Qué establecen los límites del sistema?",
+    "referencia": "Establecen los procesos incluidos y excluidos del sistema de producto y permiten delimitar la recopilación de datos.",
+    "instruccion": "Actúa como un asistente que orienta a una persona de empresa que está aprendiendo a recopilar información para cuantificar la huella de carbono de un producto. Responde en español, directamente y en un máximo de 60 palabras. No inventes datos, factores de emisión ni fuentes. Cuando falte información, indica qué se necesita.",
+    "respuesta": "Los límites del sistema establecen qué procesos, etapas del ciclo de vida y flujos se incluirán en la cuantificación de la huella de carbono del producto. Para definirlos, dime: ¿cuál es el alcance (¿de la cuna a la tumba o a la puerta?), qué etapas consideras y qué datos de actividad tienes disponibles?",
+    "precision": 0.22641509433962265,
+    "cobertura": 0.7058823529411765,
+    "f1": 0.34285714285714286
+  },
+  {
+    "id": "HCP06",
+    "consulta": "¿Qué abarca un estudio de la cuna a la puerta?",
+    "referencia": "Abarca desde la extracción de materias primas hasta la salida del producto por la puerta definida en el estudio. Debe especificarse qué procesos y transportes están incluidos.",
+    "instruccion": "Actúa como un asistente que orienta a una persona de empresa que está aprendiendo a recopilar información para cuantificar la huella de carbono de un producto. Responde en español, directamente y en un máximo de 60 palabras. No inventes datos, factores de emisión ni fuentes. Cuando falte información, indica qué se necesita.",
+    "respuesta": "El enfoque \"de la cuna a la puerta\" (*cradle-to-gate*) abarca las emisiones desde la extracción de materias primas, su transporte y la fabricación del producto, hasta que este sale de la planta del fabricante. \n\nPara cuantificarlo, necesito saber: ¿qué producto evalúa, qué etapas exactas considera la empresa y qué datos de consumo tiene?",
+    "precision": 0.3018867924528302,
+    "cobertura": 0.5925925925925926,
+    "f1": 0.4
+  },
+  {
+    "id": "HCP07",
+    "consulta": "¿Por qué conviene dibujar un diagrama de procesos?",
+    "referencia": "Porque ayuda a identificar las etapas, entradas, salidas y conexiones del sistema, y a organizar los datos que se deben recopilar.",
+    "instruccion": "Actúa como un asistente que orienta a una persona de empresa que está aprendiendo a recopilar información para cuantificar la huella de carbono de un producto. Responde en español, directamente y en un máximo de 60 palabras. No inventes datos, factores de emisión ni fuentes. Cuando falte información, indica qué se necesita.",
+    "respuesta": "Dibujar un diagrama de procesos te ayuda a visualizar claramente cada etapa del ciclo de vida del producto (como extracción, fabricación y transporte). Esto te permite identificar entradas, salidas y límites del sistema, asegurando que no olvides ninguna fuente de emisión importante. Para avanzar, indícame: ¿qué etapa de tu proceso estás analizando ahora?",
+    "precision": 0.18867924528301888,
+    "cobertura": 0.47619047619047616,
+    "f1": 0.27027027027027023
+  },
+  {
+    "id": "HCP08",
+    "consulta": "¿Qué son los datos de actividad?",
+    "referencia": "Son cantidades que describen actividades o flujos del sistema, como consumo de electricidad, combustible y materiales, transporte o generación de residuos.",
+    "instruccion": "Actúa como un asistente que orienta a una persona de empresa que está aprendiendo a recopilar información para cuantificar la huella de carbono de un producto. Responde en español, directamente y en un máximo de 60 palabras. No inventes datos, factores de emisión ni fuentes. Cuando falte información, indica qué se necesita.",
+    "respuesta": "Los datos de actividad son las medidas cuantitativas de los procesos que generan emisiones, como los litros de combustible consumidos, los kilovatios-hora de electricidad o los kilogramos de materia prima utilizada. \n\nPara cuantificarlos, indícame qué etapa del ciclo de vida del producto estás analizando y qué consumos o materiales usas; así te diré qué datos exactos necesitas recopilar.",
+    "precision": 0.20689655172413793,
+    "cobertura": 0.5714285714285714,
+    "f1": 0.3037974683544304
+  },
+  {
+    "id": "HCP09",
+    "consulta": "¿Qué es un factor de emisión?",
+    "referencia": "Es un coeficiente que relaciona una actividad o flujo con una cantidad de emisiones de gases de efecto invernadero, bajo condiciones y unidades determinadas.",
+    "instruccion": "Actúa como un asistente que orienta a una persona de empresa que está aprendiendo a recopilar información para cuantificar la huella de carbono de un producto. Responde en español, directamente y en un máximo de 60 palabras. No inventes datos, factores de emisión ni fuentes. Cuando falte información, indica qué se necesita.",
+    "respuesta": "Un factor de emisión es un valor matemático que relaciona la cantidad de contaminantes o gases de efecto invernadero liberados con una actividad específica (ej. kWh de electricidad o litros de combustible). \n\nPara cuantificar tu huella, necesito saber qué actividad o proceso de tu producto estás analizando. ¿Qué dato de consumo tienes?",
+    "precision": 0.28846153846153844,
+    "cobertura": 0.625,
+    "f1": 0.3947368421052631
+  },
+  {
+    "id": "HCP10",
+    "consulta": "¿Cómo se calculan las emisiones de una actividad cuando dispongo de un factor compatible?",
+    "referencia": "Se multiplica el dato de actividad por el factor de emisión, comprobando la compatibilidad de unidades, el alcance del factor y la representatividad de los datos.",
+    "instruccion": "Actúa como un asistente que orienta a una persona de empresa que está aprendiendo a recopilar información para cuantificar la huella de carbono de un producto. Responde en español, directamente y en un máximo de 60 palabras. No inventes datos, factores de emisión ni fuentes. Cuando falte información, indica qué se necesita.",
+    "respuesta": "Multiplica el dato de actividad (por ejemplo, kWh consumidos o litros de combustible) por el factor de emisión correspondiente. Asegúrate de que las unidades sean compatibles. Si el factor es de fuente secundaria, documenta su procedencia. \n\n¿Qué actividad específica estás midiendo y qué unidades tiene tu factor de emisión?",
+    "precision": 0.32653061224489793,
+    "cobertura": 0.6153846153846154,
+    "f1": 0.42666666666666664
+  },
+  {
+    "id": "HCP11",
+    "consulta": "¿Qué debo registrar al recopilar consumos de electricidad?",
+    "referencia": "Registra el consumo, su unidad, período, instalación o proceso al que corresponde y fuente documental, indicando cómo se relaciona con el producto estudiado.",
+    "instruccion": "Actúa como un asistente que orienta a una persona de empresa que está aprendiendo a recopilar información para cuantificar la huella de carbono de un producto. Responde en español, directamente y en un máximo de 60 palabras. No inventes datos, factores de emisión ni fuentes. Cuando falte información, indica qué se necesita.",
+    "respuesta": "Registra el consumo total de electricidad en kilovatios-hora (kWh) del período evaluado. Necesito saber si proviene de la red general, fuentes renovables (con certificados de origen) o autogeneración, y a qué etapa del ciclo de vida del producto (fabricación, ensamblaje, etc.) corresponde este consumo.",
+    "precision": 0.20454545454545456,
+    "cobertura": 0.391304347826087,
+    "f1": 0.2686567164179105
+  },
+  {
+    "id": "HCP12",
+    "consulta": "¿Qué información debo recopilar sobre los combustibles?",
+    "referencia": "Registra el tipo de combustible, cantidad, unidad, período, uso o proceso asociado y fuente documental.",
+    "instruccion": "Actúa como un asistente que orienta a una persona de empresa que está aprendiendo a recopilar información para cuantificar la huella de carbono de un producto. Responde en español, directamente y en un máximo de 60 palabras. No inventes datos, factores de emisión ni fuentes. Cuando falte información, indica qué se necesita.",
+    "respuesta": "Necesitas recopilar la cantidad exacta de combustible consumido (en litros, kilogramos o metros cúbicos) durante el proceso del producto. \n\nEspecifica el tipo exacto (ej. diésel, gas natural) y su uso (maquinaria, transporte o calefacción). \n\nSi usas facturas, indícalo. ¿Para qué etapa del ciclo de vida necesitas este dato?",
+    "precision": 0.1875,
+    "cobertura": 0.6,
+    "f1": 0.2857142857142857
+  },
+  {
+    "id": "HCP13",
+    "consulta": "¿Qué información necesito sobre las materias primas?",
+    "referencia": "Necesitas identificar los materiales, sus cantidades y unidades, el período, los proveedores y su relación con la producción del producto estudiado.",
+    "instruccion": "Actúa como un asistente que orienta a una persona de empresa que está aprendiendo a recopilar información para cuantificar la huella de carbono de un producto. Responde en español, directamente y en un máximo de 60 palabras. No inventes datos, factores de emisión ni fuentes. Cuando falte información, indica qué se necesita.",
+    "respuesta": "Para cuantificar la huella de carbono de las materias primas, necesitas recopilar la cantidad exacta (en masa o volumen) de cada material utilizado en el producto, incluyendo los embalajes. \n\nFalta saber: ¿De qué materiales específicos se trata y tienes los certificados de origen o facturas de compra con sus pesos exactos?",
+    "precision": 0.19607843137254902,
+    "cobertura": 0.47619047619047616,
+    "f1": 0.2777777777777778
+  },
+  {
+    "id": "HCP14",
+    "consulta": "¿Qué datos conviene recopilar para evaluar el transporte?",
+    "referencia": "Conviene recopilar masa transportada, distancia, modo de transporte y características relevantes del servicio, según el método y factor que se utilizarán.",
+    "instruccion": "Actúa como un asistente que orienta a una persona de empresa que está aprendiendo a recopilar información para cuantificar la huella de carbono de un producto. Responde en español, directamente y en un máximo de 60 palabras. No inventes datos, factores de emisión ni fuentes. Cuando falte información, indica qué se necesita.",
+    "respuesta": "Para evaluar el transporte, recopila: modo de transporte (camión, barco, avión), distancia recorrida o ruta exacta, peso o volumen de la carga, y tipo de combustible o consumo energético. \n\nSi es transporte de carga general, anota las toneladas-kilómetro (t·km). \n\n¿Tienes datos de las distancias y los pesos movilizados?",
+    "precision": 0.14583333333333334,
+    "cobertura": 0.3333333333333333,
+    "f1": 0.2028985507246377
+  },
+  {
+    "id": "HCP15",
+    "consulta": "¿Qué información necesito sobre los residuos?",
+    "referencia": "Necesitas identificar el tipo de residuo, cantidad, unidad, tratamiento o destino y período, junto con la evidencia disponible y el proceso que lo genera.",
+    "instruccion": "Actúa como un asistente que orienta a una persona de empresa que está aprendiendo a recopilar información para cuantificar la huella de carbono de un producto. Responde en español, directamente y en un máximo de 60 palabras. No inventes datos, factores de emisión ni fuentes. Cuando falte información, indica qué se necesita.",
+    "respuesta": "Para cuantificar la huella de carbono de tus residuos, necesitas recopilar la cantidad generada (en peso o volumen) durante el ciclo de vida del producto y el destino final de cada tipo de residuo (reciclaje, vertedero, incineración). \n\n¿Qué tipo de proceso o etapa del producto estás evaluando y qué datos específicos tienes hasta ahora?",
+    "precision": 0.24074074074074073,
+    "cobertura": 0.5416666666666666,
+    "f1": 0.33333333333333337
+  },
+  {
+    "id": "HCP16",
+    "consulta": "¿Puedo asignar todo el consumo de una fábrica a un producto si también fabrica otros productos?",
+    "referencia": "No debes atribuirlo automáticamente. Primero identifica los consumos específicos y analiza cómo tratar los consumos compartidos, justificando el procedimiento aplicado.",
+    "instruccion": "Actúa como un asistente que orienta a una persona de empresa que está aprendiendo a recopilar información para cuantificar la huella de carbono de un producto. Responde en español, directamente y en un máximo de 60 palabras. No inventes datos, factores de emisión ni fuentes. Cuando falte información, indica qué se necesita.",
+    "respuesta": "No, no debes asignar todo el consumo. Si la fábrica elabora varios productos, debes **repartir (asignar)** el consumo total basándote en un criterio proporcional, como el volumen de producción, el peso, las horas de funcionamiento o la superficie utilizada. \n\nPara hacerlo correctamente, necesito saber: ¿Qué criterio representa mejor la actividad de cada producto en esa fábrica?",
+    "precision": 0.05357142857142857,
+    "cobertura": 0.15,
+    "f1": 0.07894736842105263
+  },
+  {
+    "id": "HCP17",
+    "consulta": "¿Qué debo hacer si falta un dato de actividad?",
+    "referencia": "Identifica y registra el dato faltante, busca información verificable y, si necesitas estimarlo, documenta el método, los supuestos y sus limitaciones.",
+    "instruccion": "Actúa como un asistente que orienta a una persona de empresa que está aprendiendo a recopilar información para cuantificar la huella de carbono de un producto. Responde en español, directamente y en un máximo de 60 palabras. No inventes datos, factores de emisión ni fuentes. Cuando falte información, indica qué se necesita.",
+    "respuesta": "Si te falta un dato de actividad, primero busca en facturas, albaranes o estimaciones internas. Si no existe, prioriza usar datos genéricos de bases de datos sectoriales verificadas (como Ecoinvent) o literatura científica. \n\nSi no tienes esa información, documenta claramente la ausencia, usa una suposición conservadora y regístralo como limitación en tu inventario.",
+    "precision": 0.11320754716981132,
+    "cobertura": 0.2857142857142857,
+    "f1": 0.1621621621621622
+  },
+  {
+    "id": "HCP18",
+    "consulta": "¿Por qué deben coincidir los períodos de consumo y producción?",
+    "referencia": "Porque relacionar consumos y producción de períodos distintos puede distorsionar el resultado por unidad de producto. Las diferencias deben revisarse y justificarse.",
+    "instruccion": "Actúa como un asistente que orienta a una persona de empresa que está aprendiendo a recopilar información para cuantificar la huella de carbono de un producto. Responde en español, directamente y en un máximo de 60 palabras. No inventes datos, factores de emisión ni fuentes. Cuando falte información, indica qué se necesita.",
+    "respuesta": "Deben coincidir para reflejar con precisión la tecnología, la eficiencia y las condiciones operativas reales de ese momento. Mezclar periodos genera desajustes metodológicos y errores en el cálculo. \n\nPara avanzar, indícame: ¿qué periodo temporal abarca tu proceso de producción y qué datos de consumo tienes disponibles actualmente?",
+    "precision": 0.1702127659574468,
+    "cobertura": 0.36363636363636365,
+    "f1": 0.23188405797101447
+  }
+]

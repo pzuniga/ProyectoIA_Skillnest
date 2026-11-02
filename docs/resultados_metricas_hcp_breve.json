@@ -1,0 +1,322 @@
+[
+  {
+    "id": "HCP01",
+    "consulta": "¿Qué representa la huella de carbono de un producto?",
+    "referencia": "Representa las emisiones y remociones de gases de efecto invernadero del sistema de producto estudiado, expresadas en dióxido de carbono equivalente.",
+    "instruccion": "Actúa como un copiloto de huella de carbono de producto que orienta a una persona de empresa que está aprendiendo. Responde en español con un máximo de 30 palabras y una o dos oraciones. Incluye únicamente la información esencial para responder. No repitas la pregunta ni añadas introducciones, ejemplos, listas o recomendaciones adicionales. No inventes datos ni fuentes. Si falta información indispensable, indícalo brevemente.",
+    "respuesta": "Representa el total de gases de efecto invernadero emitidos durante todo el ciclo de vida de un producto.",
+    "palabras_respuesta": 18,
+    "cumple_extension": true,
+    "precision": 0.5,
+    "cobertura": 0.42857142857142855,
+    "f1": 0.4615384615384615,
+    "grupo_revision": "cinco_f1_mas_altos",
+    "revision_manual": {
+      "correccion_factual": "Parcialmente correcta",
+      "completitud": "Parcial",
+      "contradiccion": "Sin contradicción explícita",
+      "justificacion": "Reconoce las emisiones asociadas al producto, pero omite las remociones y su expresión en CO₂ equivalente. Presenta todo el ciclo de vida como alcance universal, sin contemplar estudios parciales con límites definidos. Es una simplificación que requiere matices, no una contradicción explícita."
+    }
+  },
+  {
+    "id": "HCP02",
+    "consulta": "¿Para qué debo definir el objetivo de un estudio de HCP?",
+    "referencia": "Para establecer el propósito del estudio, su uso previsto y los destinatarios de los resultados.",
+    "instruccion": "Actúa como un copiloto de huella de carbono de producto que orienta a una persona de empresa que está aprendiendo. Responde en español con un máximo de 30 palabras y una o dos oraciones. Incluye únicamente la información esencial para responder. No repitas la pregunta ni añadas introducciones, ejemplos, listas o recomendaciones adicionales. No inventes datos ni fuentes. Si falta información indispensable, indícalo brevemente.",
+    "respuesta": "Para determinar el alcance, la metodología y los destinatarios del análisis de tu producto.",
+    "palabras_respuesta": 14,
+    "cumple_extension": true,
+    "precision": 0.5,
+    "cobertura": 0.4666666666666667,
+    "f1": 0.4827586206896552,
+    "grupo_revision": "cinco_f1_mas_altos",
+    "revision_manual": {
+      "correccion_factual": "Parcialmente correcta",
+      "completitud": "Parcial",
+      "contradiccion": "Sin contradicción explícita",
+      "justificacion": "Identifica correctamente a los destinatarios y relaciona el objetivo con decisiones del estudio. Sin embargo, centra la explicación en alcance y metodología, sin explicitar el propósito y el uso previsto de los resultados. Esto constituye una respuesta incompleta, no una contradicción."
+    }
+  },
+  {
+    "id": "HCP03",
+    "consulta": "¿Qué debo describir del producto antes de recopilar datos?",
+    "referencia": "Debes describir el producto, su función, sus características relevantes y los procesos necesarios para proporcionarlo.",
+    "instruccion": "Actúa como un copiloto de huella de carbono de producto que orienta a una persona de empresa que está aprendiendo. Responde en español con un máximo de 30 palabras y una o dos oraciones. Incluye únicamente la información esencial para responder. No repitas la pregunta ni añadas introducciones, ejemplos, listas o recomendaciones adicionales. No inventes datos ni fuentes. Si falta información indispensable, indícalo brevemente.",
+    "respuesta": "Debes definir la unidad funcional, el ciclo de vida cubierto (de la cuna a la tumba o puerta) y los límites del sistema.",
+    "palabras_respuesta": 23,
+    "cumple_extension": true,
+    "precision": 0.17391304347826086,
+    "cobertura": 0.26666666666666666,
+    "f1": 0.2105263157894737,
+    "grupo_revision": null
+  },
+  {
+    "id": "HCP04",
+    "consulta": "¿Qué expresa la unidad funcional?",
+    "referencia": "Expresa de forma cuantificada la función del sistema de producto y sirve como referencia para relacionar entradas, salidas y resultados.",
+    "instruccion": "Actúa como un copiloto de huella de carbono de producto que orienta a una persona de empresa que está aprendiendo. Responde en español con un máximo de 30 palabras y una o dos oraciones. Incluye únicamente la información esencial para responder. No repitas la pregunta ni añadas introducciones, ejemplos, listas o recomendaciones adicionales. No inventes datos ni fuentes. Si falta información indispensable, indícalo brevemente.",
+    "respuesta": "La unidad funcional define la magnitud y duración del servicio del producto, sirviendo como base de referencia para calcular su huella de carbono.",
+    "palabras_respuesta": 23,
+    "cumple_extension": true,
+    "precision": 0.391304347826087,
+    "cobertura": 0.45,
+    "f1": 0.4186046511627907,
+    "grupo_revision": null
+  },
+  {
+    "id": "HCP05",
+    "consulta": "¿Qué establecen los límites del sistema?",
+    "referencia": "Establecen los procesos incluidos y excluidos del sistema de producto y delimitan la recopilación de datos.",
+    "instruccion": "Actúa como un copiloto de huella de carbono de producto que orienta a una persona de empresa que está aprendiendo. Responde en español con un máximo de 30 palabras y una o dos oraciones. Incluye únicamente la información esencial para responder. No repitas la pregunta ni añadas introducciones, ejemplos, listas o recomendaciones adicionales. No inventes datos ni fuentes. Si falta información indispensable, indícalo brevemente.",
+    "respuesta": "Definen qué etapas del ciclo de vida y procesos específicos se incluirán en la medición de la huella de carbono.",
+    "palabras_respuesta": 20,
+    "cumple_extension": true,
+    "precision": 0.3,
+    "cobertura": 0.375,
+    "f1": 0.33333333333333326,
+    "grupo_revision": null
+  },
+  {
+    "id": "HCP06",
+    "consulta": "¿Qué abarca un estudio de la cuna a la puerta?",
+    "referencia": "Abarca desde la extracción de materias primas hasta la salida del producto por la puerta definida, especificando los procesos y transportes incluidos.",
+    "instruccion": "Actúa como un copiloto de huella de carbono de producto que orienta a una persona de empresa que está aprendiendo. Responde en español con un máximo de 30 palabras y una o dos oraciones. Incluye únicamente la información esencial para responder. No repitas la pregunta ni añadas introducciones, ejemplos, listas o recomendaciones adicionales. No inventes datos ni fuentes. Si falta información indispensable, indícalo brevemente.",
+    "respuesta": "Un estudio de la cuna a la puerta abarca desde la extracción de materias primas hasta que el producto sale de la fábrica.",
+    "palabras_respuesta": 23,
+    "cumple_extension": true,
+    "precision": 0.5217391304347826,
+    "cobertura": 0.5454545454545454,
+    "f1": 0.5333333333333332,
+    "grupo_revision": "cinco_f1_mas_altos",
+    "revision_manual": {
+      "correccion_factual": "Correcta en un contexto de fabricación",
+      "completitud": "Parcial",
+      "contradiccion": "Sin contradicción explícita",
+      "justificacion": "Describe correctamente el recorrido desde la extracción de materias primas hasta la salida de fábrica en un contexto de fabricación. No explicita la puerta definida para el estudio ni los procesos y transportes incluidos. Estas omisiones no constituyen una contradicción."
+    }
+  },
+  {
+    "id": "HCP07",
+    "consulta": "¿Por qué conviene dibujar un diagrama de procesos?",
+    "referencia": "Ayuda a identificar etapas, entradas, salidas y conexiones del sistema, y a organizar los datos que se deben recopilar.",
+    "instruccion": "Actúa como un copiloto de huella de carbono de producto que orienta a una persona de empresa que está aprendiendo. Responde en español con un máximo de 30 palabras y una o dos oraciones. Incluye únicamente la información esencial para responder. No repitas la pregunta ni añadas introducciones, ejemplos, listas o recomendaciones adicionales. No inventes datos ni fuentes. Si falta información indispensable, indícalo brevemente.",
+    "respuesta": "Permite identificar visualmente las etapas del ciclo de vida y los flujos de materiales o energía de tu producto.",
+    "palabras_respuesta": 19,
+    "cumple_extension": true,
+    "precision": 0.2631578947368421,
+    "cobertura": 0.2631578947368421,
+    "f1": 0.2631578947368421,
+    "grupo_revision": null
+  },
+  {
+    "id": "HCP08",
+    "consulta": "¿Qué son los datos de actividad?",
+    "referencia": "Son cantidades que describen actividades o flujos del sistema, como consumos de electricidad, combustibles y materiales, transporte o generación de residuos.",
+    "instruccion": "Actúa como un copiloto de huella de carbono de producto que orienta a una persona de empresa que está aprendiendo. Responde en español con un máximo de 30 palabras y una o dos oraciones. Incluye únicamente la información esencial para responder. No repitas la pregunta ni añadas introducciones, ejemplos, listas o recomendaciones adicionales. No inventes datos ni fuentes. Si falta información indispensable, indícalo brevemente.",
+    "respuesta": "Son las medidas cuantitativas de las operaciones que generan emisiones, como los litros de combustible consumidos o los kWh de electricidad utilizados.",
+    "palabras_respuesta": 22,
+    "cumple_extension": true,
+    "precision": 0.3181818181818182,
+    "cobertura": 0.3333333333333333,
+    "f1": 0.3255813953488372,
+    "grupo_revision": null
+  },
+  {
+    "id": "HCP09",
+    "consulta": "¿Qué es un factor de emisión?",
+    "referencia": "Es un coeficiente que relaciona una actividad o flujo con emisiones de gases de efecto invernadero, bajo condiciones y unidades determinadas.",
+    "instruccion": "Actúa como un copiloto de huella de carbono de producto que orienta a una persona de empresa que está aprendiendo. Responde en español con un máximo de 30 palabras y una o dos oraciones. Incluye únicamente la información esencial para responder. No repitas la pregunta ni añadas introducciones, ejemplos, listas o recomendaciones adicionales. No inventes datos ni fuentes. Si falta información indispensable, indícalo brevemente.",
+    "respuesta": "Es un coeficiente matemático que relaciona la actividad generadora de GEI con la cantidad de emisiones liberadas.",
+    "palabras_respuesta": 17,
+    "cumple_extension": true,
+    "precision": 0.5882352941176471,
+    "cobertura": 0.47619047619047616,
+    "f1": 0.5263157894736842,
+    "grupo_revision": "cinco_f1_mas_altos",
+    "revision_manual": {
+      "correccion_factual": "Correcta",
+      "completitud": "Parcial",
+      "contradiccion": "Sin contradicción explícita",
+      "justificacion": "Define correctamente la relación entre una actividad y la cantidad de emisiones. Respecto de la referencia, omite que el coeficiente corresponde a condiciones y unidades determinadas. La definición básica es válida y no presenta contradicciones."
+    }
+  },
+  {
+    "id": "HCP10",
+    "consulta": "¿Cómo calculo las emisiones de una actividad si tengo un factor de emisión compatible?",
+    "referencia": "Multiplica el dato de actividad por el factor de emisión, comprobando la compatibilidad de unidades, el alcance del factor y su representatividad.",
+    "instruccion": "Actúa como un copiloto de huella de carbono de producto que orienta a una persona de empresa que está aprendiendo. Responde en español con un máximo de 30 palabras y una o dos oraciones. Incluye únicamente la información esencial para responder. No repitas la pregunta ni añadas introducciones, ejemplos, listas o recomendaciones adicionales. No inventes datos ni fuentes. Si falta información indispensable, indícalo brevemente.",
+    "respuesta": "Multiplica el dato de actividad por el factor de emisión compatible. Si falta el dato de actividad, indícalo.",
+    "palabras_respuesta": 18,
+    "cumple_extension": true,
+    "precision": 0.6666666666666666,
+    "cobertura": 0.5454545454545454,
+    "f1": 0.6,
+    "grupo_revision": "cinco_f1_mas_altos",
+    "revision_manual": {
+      "correccion_factual": "Correcta",
+      "completitud": "Parcial",
+      "contradiccion": "Sin contradicción explícita",
+      "justificacion": "Indica correctamente la multiplicación del dato de actividad por el factor de emisión. Respecto de la referencia, no explicita la revisión de unidades, alcance y representatividad, aunque la pregunta ya presupone un factor compatible. La segunda oración es innecesaria, pero no contradice el cálculo."
+    }
+  },
+  {
+    "id": "HCP11",
+    "consulta": "¿Qué debo registrar al recopilar consumos de electricidad?",
+    "referencia": "Registra consumo, unidad, período, instalación o proceso y fuente documental, indicando su relación con el producto estudiado.",
+    "instruccion": "Actúa como un copiloto de huella de carbono de producto que orienta a una persona de empresa que está aprendiendo. Responde en español con un máximo de 30 palabras y una o dos oraciones. Incluye únicamente la información esencial para responder. No repitas la pregunta ni añadas introducciones, ejemplos, listas o recomendaciones adicionales. No inventes datos ni fuentes. Si falta información indispensable, indícalo brevemente.",
+    "respuesta": "Registra los kilovatios-hora (kWh) consumidos, el periodo de tiempo correspondiente y, si aplica, el factor de emisión de la red eléctrica local.",
+    "palabras_respuesta": 22,
+    "cumple_extension": true,
+    "precision": 0.13636363636363635,
+    "cobertura": 0.17647058823529413,
+    "f1": 0.15384615384615383,
+    "grupo_revision": "cinco_f1_mas_bajos",
+    "revision_manual": {
+      "correccion_factual": "Correcta",
+      "completitud": "Parcial",
+      "contradiccion": "Sin contradicción explícita",
+      "justificacion": "Identifica correctamente el consumo eléctrico, su unidad y el período. Omite la instalación o proceso, la fuente documental y la relación con el producto estudiado. El factor de emisión es información complementaria y no reemplaza esos registros. Las omisiones no constituyen una contradicción."
+    }
+  },
+  {
+    "id": "HCP12",
+    "consulta": "¿Qué información debo recopilar sobre los combustibles?",
+    "referencia": "Registra el tipo de combustible, cantidad, unidad, período, uso o proceso asociado y fuente documental.",
+    "instruccion": "Actúa como un copiloto de huella de carbono de producto que orienta a una persona de empresa que está aprendiendo. Responde en español con un máximo de 30 palabras y una o dos oraciones. Incluye únicamente la información esencial para responder. No repitas la pregunta ni añadas introducciones, ejemplos, listas o recomendaciones adicionales. No inventes datos ni fuentes. Si falta información indispensable, indícalo brevemente.",
+    "respuesta": "Recopila el tipo exacto, el consumo total y la unidad de medida de cada combustible utilizado.",
+    "palabras_respuesta": 16,
+    "cumple_extension": true,
+    "precision": 0.375,
+    "cobertura": 0.4,
+    "f1": 0.38709677419354843,
+    "grupo_revision": null
+  },
+  {
+    "id": "HCP13",
+    "consulta": "¿Qué información necesito sobre las materias primas?",
+    "referencia": "Identifica materiales, cantidades, unidades, período y proveedores, junto con su relación con la producción del producto estudiado.",
+    "instruccion": "Actúa como un copiloto de huella de carbono de producto que orienta a una persona de empresa que está aprendiendo. Responde en español con un máximo de 30 palabras y una o dos oraciones. Incluye únicamente la información esencial para responder. No repitas la pregunta ni añadas introducciones, ejemplos, listas o recomendaciones adicionales. No inventes datos ni fuentes. Si falta información indispensable, indícalo brevemente.",
+    "respuesta": "Necesitas conocer el peso exacto de cada material, su tipo y el origen o distancia de transporte hasta tu planta.",
+    "palabras_respuesta": 20,
+    "cumple_extension": true,
+    "precision": 0.1,
+    "cobertura": 0.11764705882352941,
+    "f1": 0.1081081081081081,
+    "grupo_revision": "cinco_f1_mas_bajos",
+    "revision_manual": {
+      "correccion_factual": "Parcialmente correcta",
+      "completitud": "Parcial",
+      "contradiccion": "Sin contradicción explícita",
+      "justificacion": "Identifica el tipo y la cantidad de material e incorpora información pertinente sobre origen y transporte. Sin embargo, exige “peso exacto” innecesariamente y omite unidades, período, proveedores y relación con la producción. Estas omisiones no constituyen una contradicción."
+    }
+  },
+  {
+    "id": "HCP14",
+    "consulta": "¿Qué datos conviene recopilar para evaluar el transporte?",
+    "referencia": "Recopila masa transportada, distancia, modo de transporte y características relevantes del servicio, según el método y factor que utilizarás.",
+    "instruccion": "Actúa como un copiloto de huella de carbono de producto que orienta a una persona de empresa que está aprendiendo. Responde en español con un máximo de 30 palabras y una o dos oraciones. Incluye únicamente la información esencial para responder. No repitas la pregunta ni añadas introducciones, ejemplos, listas o recomendaciones adicionales. No inventes datos ni fuentes. Si falta información indispensable, indícalo brevemente.",
+    "respuesta": "Recopila el peso o volumen de la carga, la distancia recorrida y el medio de transporte utilizado (carretera, marítimo, aéreo).",
+    "palabras_respuesta": 20,
+    "cumple_extension": true,
+    "precision": 0.3,
+    "cobertura": 0.3157894736842105,
+    "f1": 0.3076923076923077,
+    "grupo_revision": null
+  },
+  {
+    "id": "HCP15",
+    "consulta": "¿Qué información necesito sobre los residuos?",
+    "referencia": "Identifica tipo de residuo, cantidad, unidad, tratamiento o destino, período, evidencia disponible y proceso que lo genera.",
+    "instruccion": "Actúa como un copiloto de huella de carbono de producto que orienta a una persona de empresa que está aprendiendo. Responde en español con un máximo de 30 palabras y una o dos oraciones. Incluye únicamente la información esencial para responder. No repitas la pregunta ni añadas introducciones, ejemplos, listas o recomendaciones adicionales. No inventes datos ni fuentes. Si falta información indispensable, indícalo brevemente.",
+    "respuesta": "Necesitas conocer el volumen total de residuos generado, su tipo y el método exacto de tratamiento o disposición final.",
+    "palabras_respuesta": 19,
+    "cumple_extension": true,
+    "precision": 0.2631578947368421,
+    "cobertura": 0.29411764705882354,
+    "f1": 0.27777777777777773,
+    "grupo_revision": null
+  },
+  {
+    "id": "HCP16",
+    "consulta": "¿Puedo asignar todo el consumo de una fábrica a un producto si también fabrica otros productos?",
+    "referencia": "No automáticamente. Identifica consumos específicos y analiza cómo tratar los compartidos, justificando el procedimiento aplicado.",
+    "instruccion": "Actúa como un copiloto de huella de carbono de producto que orienta a una persona de empresa que está aprendiendo. Responde en español con un máximo de 30 palabras y una o dos oraciones. Incluye únicamente la información esencial para responder. No repitas la pregunta ni añadas introducciones, ejemplos, listas o recomendaciones adicionales. No inventes datos ni fuentes. Si falta información indispensable, indícalo brevemente.",
+    "respuesta": "No, debes asignar los consumos de la fábrica proporcionalmente a cada producto según un criterio físico, como masa o tiempo de producción.",
+    "palabras_respuesta": 22,
+    "cumple_extension": true,
+    "precision": 0.13636363636363635,
+    "cobertura": 0.2,
+    "f1": 0.16216216216216214,
+    "grupo_revision": "cinco_f1_mas_bajos",
+    "revision_manual": {
+      "correccion_factual": "Parcialmente correcta",
+      "completitud": "Parcial",
+      "contradiccion": "Sin contradicción explícita",
+      "justificacion": "Rechaza atribuir automáticamente todo el consumo a un producto, pero prescribe una distribución proporcional mediante criterios físicos sin analizar primero los consumos específicos y compartidos. Omite justificar la necesidad de asignación y la pertinencia del criterio elegido. No presenta una contradicción explícita."
+    }
+  },
+  {
+    "id": "HCP18",
+    "consulta": "¿Por qué deben coincidir los períodos de consumo y producción?",
+    "referencia": "Relacionar consumos y producción de períodos distintos puede distorsionar el resultado por unidad de producto. Las diferencias deben revisarse y justificarse.",
+    "instruccion": "Actúa como un copiloto de huella de carbono de producto que orienta a una persona de empresa que está aprendiendo. Responde en español con un máximo de 30 palabras y una o dos oraciones. Incluye únicamente la información esencial para responder. No repitas la pregunta ni añadas introducciones, ejemplos, listas o recomendaciones adicionales. No inventes datos ni fuentes. Si falta información indispensable, indícalo brevemente.",
+    "respuesta": "Para garantizar que los datos de emisiones reflejen con precisión la actividad real y evitar desvíos en el cálculo.",
+    "palabras_respuesta": 19,
+    "cumple_extension": true,
+    "precision": 0.15789473684210525,
+    "cobertura": 0.14285714285714285,
+    "f1": 0.15,
+    "grupo_revision": "cinco_f1_mas_bajos",
+    "revision_manual": {
+      "correccion_factual": "Correcta",
+      "completitud": "Parcial",
+      "contradiccion": "Sin contradicción explícita",
+      "justificacion": "La respuesta reconoce que la coherencia temporal ayuda a evitar distorsiones, pero no explica cómo relacionar consumos y producción de períodos diferentes afecta el resultado por unidad de producto. Omite revisar y justificar las diferencias. “Garantizar” es excesivo: la coincidencia temporal no asegura por sí sola la precisión."
+    }
+  },
+  {
+    "id": "HCP17",
+    "consulta": "¿Qué debo hacer si falta un dato de actividad?",
+    "referencia": "Registra el dato faltante y busca información verificable. Si necesitas estimarlo, documenta el método, los supuestos y sus limitaciones.",
+    "instruccion": "Actúa como un copiloto de huella de carbono de producto que orienta a una persona de empresa que está aprendiendo. Responde en español con un máximo de 30 palabras y una o dos oraciones. Incluye únicamente la información esencial para responder. No repitas la pregunta ni añadas introducciones, ejemplos, listas o recomendaciones adicionales. No inventes datos ni fuentes. Si falta información indispensable, indícalo brevemente.",
+    "respuesta": "Utiliza estimaciones basadas en datos históricos, literatura científica o factores de emisión promedio de la industria. Si es indispensable, indícalo como vacío en el informe.",
+    "palabras_respuesta": 25,
+    "cumple_extension": true,
+    "precision": 0.08,
+    "cobertura": 0.10526315789473684,
+    "f1": 0.0909090909090909,
+    "grupo_revision": "cinco_f1_mas_bajos",
+    "revision_manual": {
+      "correccion_factual": "Parcialmente correcta",
+      "completitud": "Parcial",
+      "contradiccion": "Sin contradicción explícita",
+      "justificacion": "Los datos históricos pueden apoyar una estimación, pero un factor de emisión promedio no sustituye por sí solo un dato de actividad faltante. Omite buscar información verificable y documentar el método, los supuestos y las limitaciones. La expresión “si es indispensable” es ambigua."
+    }
+  },
+  {
+    "id": "HCP19",
+    "consulta": "¿Para qué sirven las facturas y registros usados en el estudio?",
+    "referencia": "Permiten rastrear el origen de los datos, revisar los cálculos y facilitar la comprobación del estudio.",
+    "instruccion": "Actúa como un copiloto de huella de carbono de producto que orienta a una persona de empresa que está aprendiendo. Responde en español con un máximo de 30 palabras y una o dos oraciones. Incluye únicamente la información esencial para responder. No repitas la pregunta ni añadas introducciones, ejemplos, listas o recomendaciones adicionales. No inventes datos ni fuentes. Si falta información indispensable, indícalo brevemente.",
+    "respuesta": "Sirven para obtener los datos de actividad reales y precisos necesarios para calcular las emisiones del producto.",
+    "palabras_respuesta": 17,
+    "cumple_extension": true,
+    "precision": 0.29411764705882354,
+    "cobertura": 0.3125,
+    "f1": 0.30303030303030304,
+    "grupo_revision": null
+  },
+  {
+    "id": "HCP20",
+    "consulta": "¿Puedes calcular la HCP exacta de mi producto si solo te digo su nombre?",
+    "referencia": "No. Se requiere definir el producto y el alcance y disponer de datos de sus procesos y factores adecuados.",
+    "instruccion": "Actúa como un copiloto de huella de carbono de producto que orienta a una persona de empresa que está aprendiendo. Responde en español con un máximo de 30 palabras y una o dos oraciones. Incluye únicamente la información esencial para responder. No repitas la pregunta ni añadas introducciones, ejemplos, listas o recomendaciones adicionales. No inventes datos ni fuentes. Si falta información indispensable, indícalo brevemente.",
+    "respuesta": "No, es imposible calcularla solo con el nombre. Necesito datos precisos sobre sus materiales, peso, fabricación y transporte.",
+    "palabras_respuesta": 18,
+    "cumple_extension": true,
+    "precision": 0.2777777777777778,
+    "cobertura": 0.2631578947368421,
+    "f1": 0.27027027027027023,
+    "grupo_revision": null
+  }
+]
