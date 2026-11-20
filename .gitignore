@@ -23,4 +23,30 @@ Thumbs.db
 # Test Scripts Python locales excluidos del repositorio
 /local_py/
 
+# Vectorstore de documentación
+vectorstore/
+
+# Credenciales Google Cloud
 credenciales.json
+
+# Documentos normativos protegidos
+/docs/Biblioteca/
+
+# Corpus y archivos intermedios
+/data/corpus/
+/data/resultados/
+/data/revision_visuales_iso14067*.json
+
+# Bases vectoriales
+/chroma_db/
+/vectorstore_ejemplo/
+/vectorstore_iso14067_*/
+
+# Registros locales
+/registros_latencia_costo.jsonl
+/trazas_agente.jsonl
+/diagnostico_corpus_iso14067.json
+/docs/diagnostico_corpus_iso14067.json
+
+# Respaldos locales
+/requirements_backup.txt

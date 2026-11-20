@@ -1,0 +1,170 @@
+{
+  "timestamp_utc": "2026-11-20T21:19:28.069412+00:00",
+  "vectorstore": "C:\\ProyectoIA_Skillnest\\vectorstore_iso14067_cs600_ov90",
+  "modelo_embeddings": "models/gemini-embedding-001",
+  "consultas": [
+    {
+      "pregunta": "¿Qué requisitos existen para utilizar factores de emisión específicos de un proveedor de electricidad?",
+      "k": 3,
+      "recuperados": 3,
+      "latencia_busqueda_ms": 931.28,
+      "resultados": [
+        {
+          "posicion": 1,
+          "id_chunk": "norma_6b0ca775f8199bfce6e55edd_c0000",
+          "distancia": 0.40727,
+          "fuente": "NCh-ISO 14067:2019",
+          "apartado": "6.4.9.4.3",
+          "apartado_contenedor": "6.4.9.4.3",
+          "titulo": "Electricidad de un proveedor conectado directamente",
+          "tipo_contenido": "apartado",
+          "caracter": "cuerpo_normativo",
+          "pagina_pdf_inicio": 40,
+          "pagina_pdf_fin": 40,
+          "pagina_norma_inicio": 28,
+          "pagina_norma_fin": 28
+        },
+        {
+          "posicion": 2,
+          "id_chunk": "norma_246ad5e27907236ff19f345f_c0002",
+          "distancia": 0.51568,
+          "fuente": "NCh-ISO 14067:2019",
+          "apartado": "6.4.9.4.1",
+          "apartado_contenedor": "6.4.9.4.1",
+          "titulo": "Generalidades",
+          "tipo_contenido": "apartado",
+          "caracter": "cuerpo_normativo",
+          "pagina_pdf_inicio": 40,
+          "pagina_pdf_fin": 40,
+          "pagina_norma_inicio": 28,
+          "pagina_norma_fin": 28
+        },
+        {
+          "posicion": 3,
+          "id_chunk": "norma_c09bdc3260795d74fd8976df_c0002",
+          "distancia": 0.52014,
+          "fuente": "NCh-ISO 14067:2019",
+          "apartado": "6.4.9.4.4",
+          "apartado_contenedor": "6.4.9.4.4",
+          "titulo": "Electricidad de la red",
+          "tipo_contenido": "apartado",
+          "caracter": "cuerpo_normativo",
+          "pagina_pdf_inicio": 41,
+          "pagina_pdf_fin": 41,
+          "pagina_norma_inicio": 29,
+          "pagina_norma_fin": 29
+        }
+      ]
+    },
+    {
+      "pregunta": "¿Qué requisitos existen para utilizar factores de emisión específicos de un proveedor de electricidad?",
+      "k": 6,
+      "recuperados": 6,
+      "latencia_busqueda_ms": 871.04,
+      "resultados": [
+        {
+          "posicion": 1,
+          "id_chunk": "norma_6b0ca775f8199bfce6e55edd_c0000",
+          "distancia": 0.40727,
+          "fuente": "NCh-ISO 14067:2019",
+          "apartado": "6.4.9.4.3",
+          "apartado_contenedor": "6.4.9.4.3",
+          "titulo": "Electricidad de un proveedor conectado directamente",
+          "tipo_contenido": "apartado",
+          "caracter": "cuerpo_normativo",
+          "pagina_pdf_inicio": 40,
+          "pagina_pdf_fin": 40,
+          "pagina_norma_inicio": 28,
+          "pagina_norma_fin": 28
+        },
+        {
+          "posicion": 2,
+          "id_chunk": "norma_246ad5e27907236ff19f345f_c0002",
+          "distancia": 0.51568,
+          "fuente": "NCh-ISO 14067:2019",
+          "apartado": "6.4.9.4.1",
+          "apartado_contenedor": "6.4.9.4.1",
+          "titulo": "Generalidades",
+          "tipo_contenido": "apartado",
+          "caracter": "cuerpo_normativo",
+          "pagina_pdf_inicio": 40,
+          "pagina_pdf_fin": 40,
+          "pagina_norma_inicio": 28,
+          "pagina_norma_fin": 28
+        },
+        {
+          "posicion": 3,
+          "id_chunk": "norma_c09bdc3260795d74fd8976df_c0002",
+          "distancia": 0.52014,
+          "fuente": "NCh-ISO 14067:2019",
+          "apartado": "6.4.9.4.4",
+          "apartado_contenedor": "6.4.9.4.4",
+          "titulo": "Electricidad de la red",
+          "tipo_contenido": "apartado",
+          "caracter": "cuerpo_normativo",
+          "pagina_pdf_inicio": 41,
+          "pagina_pdf_fin": 41,
+          "pagina_norma_inicio": 29,
+          "pagina_norma_fin": 29
+        },
+        {
+          "posicion": 4,
+          "id_chunk": "norma_c09bdc3260795d74fd8976df_c0000",
+          "distancia": 0.5245,
+          "fuente": "NCh-ISO 14067:2019",
+          "apartado": "6.4.9.4.4",
+          "apartado_contenedor": "6.4.9.4.4",
+          "titulo": "Electricidad de la red",
+          "tipo_contenido": "apartado",
+          "caracter": "cuerpo_normativo",
+          "pagina_pdf_inicio": 41,
+          "pagina_pdf_fin": 41,
+          "pagina_norma_inicio": 29,
+          "pagina_norma_fin": 29
+        },
+        {
+          "posicion": 5,
+          "id_chunk": "norma_c09bdc3260795d74fd8976df_c0004",
+          "distancia": 0.54893,
+          "fuente": "NCh-ISO 14067:2019",
+          "apartado": "6.4.9.4.4",
+          "apartado_contenedor": "6.4.9.4.4",
+          "titulo": "Electricidad de la red",
+          "tipo_contenido": "apartado",
+          "caracter": "cuerpo_normativo",
+          "pagina_pdf_inicio": 41,
+          "pagina_pdf_fin": 41,
+          "pagina_norma_inicio": 29,
+          "pagina_norma_fin": 29
+        },
+        {
+          "posicion": 6,
+          "id_chunk": "norma_246ad5e27907236ff19f345f_c0000",
+          "distancia": 0.56733,
+          "fuente": "NCh-ISO 14067:2019",
+          "apartado": "6.4.9.4.1",
+          "apartado_contenedor": "6.4.9.4.1",
+          "titulo": "Generalidades",
+          "tipo_contenido": "apartado",
+          "caracter": "cuerpo_normativo",
+          "pagina_pdf_inicio": 40,
+          "pagina_pdf_fin": 40,
+          "pagina_norma_inicio": 28,
+          "pagina_norma_fin": 28
+        }
+      ]
+    }
+  ],
+  "comparaciones": [
+    {
+      "pregunta": "¿Qué requisitos existen para utilizar factores de emisión específicos de un proveedor de electricidad?",
+      "k_primero": 3,
+      "k_segundo": 6,
+      "coincidencias_ids": 3,
+      "ids_adicionales_segundo": 3,
+      "latencia_primero_ms": 931.28,
+      "latencia_segundo_ms": 871.04
+    }
+  ],
+  "nota": "Distancias de Chroma; no equivalen a precisión. Los embeddings de las consultas consumen API."
+}
