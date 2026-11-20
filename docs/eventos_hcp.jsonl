@@ -1,0 +1,19 @@
+{"timestamp": "2026-11-20T00:36:22.105184+00:00", "session_id": "prueba_gemini_001", "evento": "consulta_guia", "tema": "electricidad", "disponible": true}
+{"timestamp": "2026-11-20T00:40:21.071822+00:00", "session_id": "prueba_gemini_001", "evento": "calculo_provisional", "calculo_id": "d94398eb-1393-4f2f-90b0-17ae9293a35a", "emisiones_kgco2e": 450.0}
+{"timestamp": "2026-11-20T00:40:40.956008+00:00", "session_id": "prueba_gemini_001", "evento": "calculo_provisional", "calculo_id": "5d562355-389b-472e-83e4-14dad0e672c1", "emisiones_kgco2e": 900.0}
+{"timestamp": "2026-11-20T00:50:23.515458+00:00", "session_id": "prueba_gemini_002", "evento": "calculo_provisional", "calculo_id": "2a2fd5ff-7267-4051-9694-3070795f9846", "emisiones_kgco2e": 900.0}
+{"timestamp": "2026-11-20T00:59:59.533924+00:00", "session_id": "prueba_gemini_002", "evento": "aprobacion", "calculo_id": "2a2fd5ff-7267-4051-9694-3070795f9846", "aprobado": false}
+{"timestamp": "2026-11-20T01:03:28.310862+00:00", "session_id": "prueba_aprobacion_003", "evento": "calculo_provisional", "calculo_id": "8cfee6f7-eef2-4b70-be07-41baeb2f6cd9", "emisiones_kgco2e": 750.0}
+{"timestamp": "2026-11-20T01:04:35.960162+00:00", "session_id": "prueba_aprobacion_003", "evento": "aprobacion", "calculo_id": "8cfee6f7-eef2-4b70-be07-41baeb2f6cd9", "aprobado": true}
+{"timestamp": "2026-11-20T01:04:35.961161+00:00", "session_id": "prueba_aprobacion_003", "evento": "guardado_confirmado", "calculo_id": "8cfee6f7-eef2-4b70-be07-41baeb2f6cd9"}
+{"timestamp": "2026-11-20T01:09:32.916743+00:00", "session_id": "prueba_duplicados_004", "evento": "calculo_provisional", "calculo_id": "e09335f1-5c2d-4b43-a201-25044a56a309", "emisiones_kgco2e": 300.0}
+{"timestamp": "2026-11-20T01:10:41.906502+00:00", "session_id": "prueba_duplicados_004", "evento": "aprobacion", "calculo_id": "e09335f1-5c2d-4b43-a201-25044a56a309", "aprobado": true}
+{"timestamp": "2026-11-20T01:10:41.906502+00:00", "session_id": "prueba_duplicados_004", "evento": "guardado_confirmado", "calculo_id": "e09335f1-5c2d-4b43-a201-25044a56a309"}
+{"timestamp": "2026-11-20T01:17:41.126216+00:00", "session_id": "prueba_validacion_005", "evento": "consulta_guia", "tema": "electricidad", "disponible": true}
+{"timestamp": "2026-11-20T01:19:27.269609+00:00", "session_id": "prueba_validacion_005", "evento": "calculo_provisional", "calculo_id": "61889c61-74b1-4c97-bb86-2d164bbc4736", "emisiones_kgco2e": 300.0}
+{"timestamp": "2026-11-20T01:21:46.944794+00:00", "session_id": "prueba_timeout_006", "evento": "calculo_provisional", "calculo_id": "5553b719-0f86-41c7-b4cc-7aebecb3f2b7", "emisiones_kgco2e": 600.0}
+{"timestamp": "2026-11-20T01:26:43.201400+00:00", "session_id": "prueba_timeout_007", "evento": "calculo_provisional", "calculo_id": "2fe87aba-02ff-4660-8690-b55170860bf2", "emisiones_kgco2e": 600.0}
+{"timestamp": "2026-11-20T01:30:55.214517+00:00", "session_id": "prueba_timeout_007", "evento": "calculo_provisional", "calculo_id": "79fa5e09-ccc1-4a55-bdd8-ba0ec299b82b", "emisiones_kgco2e": 600.0}
+{"timestamp": "2026-11-20T01:31:46.125429+00:00", "session_id": "prueba_timeout_007", "evento": "aprobacion", "calculo_id": "79fa5e09-ccc1-4a55-bdd8-ba0ec299b82b", "aprobado": false}
+{"timestamp": "2026-11-20T01:57:26.234578+00:00", "session_id": "prueba_prompt_009", "evento": "calculo_provisional", "calculo_id": "6893dc4d-d63b-4f31-bec5-11fe8e2ef850", "emisiones_kgco2e": 300.0}
+{"timestamp": "2026-11-20T01:57:39.978435+00:00", "session_id": "prueba_prompt_009", "evento": "aprobacion", "calculo_id": "6893dc4d-d63b-4f31-bec5-11fe8e2ef850", "aprobado": false}
